@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask
+  namespace: default
+  labels:
+    app: flask
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask
+  template:
+    metadata:
+      labels:
+        app: flask
+    spec:
+      containers:
+      - name: flask
+        image: "srinidocker003/app:26.1.0"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-service
+  namespace: default
+  labels:
+    app: flask
+spec:
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
+  selector:
+    app: flask
+  type: LoadBalancer
+
