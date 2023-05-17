@@ -6,7 +6,7 @@
   - postgres DB image with custome image
   - prometheus and grafana (use helm to install as a package)
 
-### Architecture diagram(kubernets infra)
+### Architecture diagram(kubernetes infra)
 ![image](https://github.com/svas258/flaskAPI/assets/91326469/7b6ce038-e705-4c9d-8fd2-367cf22913c0)
 
 * Step1:
