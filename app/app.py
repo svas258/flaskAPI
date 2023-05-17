@@ -1,18 +1,17 @@
 import os
 import psycopg2 as db
-# from dotenv import load_dotenv
-from flask import Flask,request,jsonify
+from dotenv import load_dotenv
+from flask import Flask, render_template,request,jsonify
 
 
-# load_dotenv()
+load_dotenv()
 app=Flask(__name__)
 @app.route("/")
 def index():
-    return "This is for 'ServiceNow' technical assignment"
-conn = db.connect(host='localhost', dbname='postgres', user='postgres', password='Admin')
-connection=conn
-# url = os.getenv("DATABASE_URL")
-# connection = db.connect(url)
+        return render_template('index.html')
+
+url = os.getenv("DATABASE_URL")
+connection = db.connect(url)
 #get all data
 query= "SELECT * FROM user_data;"
 @app.route('/user', methods=['GET'])
