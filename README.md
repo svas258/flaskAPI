@@ -16,7 +16,7 @@
    > Apply the Database related yaml's(PV,PVC,statefulset and service). check the /user_data context to fetch the data's from db.
     <img src="https://github.com/svas258/flaskAPI/assets/91326469/a5dd074e-3f11-466d-b565-7e12436bf762"  width="60%" height="30%">
 * Step3:
-   > Apply and configure the Prometheus and Grafana related yaml's to set the monitoring stack for the deployed applicaiton and db. I have used offcial helm charts of the Prometheus & Grafana setup. Refered this https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+   > Apply and configure the Prometheus and Grafana related yaml's to set the monitoring stack for the deployed applicaiton and db. I have used offcial helm charts of the Prometheus & Grafana setup. Refer this <a href="https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack">document<a> 
 * Step4: 
    > Verify the Grafan and Prometheus dashboards for the applcation utlizations and perfromance metrics.
     <img src="https://github.com/svas258/flaskAPI/assets/91326469/d2989859-f75d-4bb5-8e92-0a45d5a82803"  width="60%" height="30%"> 
