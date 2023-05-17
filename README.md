@@ -10,7 +10,7 @@
 ![image](https://github.com/svas258/flaskAPI/assets/91326469/7b6ce038-e705-4c9d-8fd2-367cf22913c0)
 
 * Step1:
-    > Apply the applicaiton related yaml's(deployment and service) and verify with static index page for the sanity checks of the application.
+    > Apply the application related yaml's(deployment and service) and verify with static index page for the sanity checks of the application.
     <img src="https://github.com/svas258/flaskAPI/assets/91326469/9be561b2-bcc9-4766-9718-47015f895df3"  width="60%" height="30%">
 * Step2:
    > Apply the Database related yaml's(PV,PVC,statefulset and service). check the /user_data context to fetch the data's from db.
